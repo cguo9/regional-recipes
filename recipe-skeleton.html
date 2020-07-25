@@ -8,24 +8,34 @@
         <!-- viewport takes care of device scaling, figure out how to import javascript and bootstrap stuff-->
         <title>Culinary Corner</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <nav>
 
         </nav>
     </head>
 
-    <body>
-        <div class="jumbotron ">
-            <div class="container">
-                <header>
-                    <h1 class="display-4">RECIPE NAME (Estimated Time: xx Minutes)</h1>
-                </header>
-                <hr class="my-4">
+    <body class="surround">
 
-                <main>
-                    <h2>Ingredients:</h2>
+        <div class="container">
+            <header>
+                <h1 class="display-4">RECIPE NAME (Estimated Time: xx Minutes)</h1>
+            </header>
+            <hr class="my-4">
+
+            <main>
+                <div class="img-vid">
+                    <img width="500" height="315" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pumpkin-chocolate-chip-cookies-horizontal-1538066903.jpg" alt="Cookies!"/>
+                </div>
+
+
+                <div class="ingred">
+                    <h2 style="color: Blue">Ingredients:</h2>
                     <!-- unordered bullet point list -->
-                    <p><i>Please beware of any allergies or any other medical afflications you may have!</i></p>
-                    <ul style="float:left">
+                    <p><i>Please beware of any allergies or any other medical afflictions you may have!</i></p>
+                    <ul>
                         <li>Example</li>
                         <li>Example2</li>
                         <li>Example3</li>
@@ -33,22 +43,43 @@
                         <li>Example5</li>
                         <li>Example6</li>
                     </ul>
-                    <span>
-                        <iframe id ="vid" width="500" height="315" src="https://www.youtube.com/embed/wDO4pRXpRmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </span>
-                    <div>
+                </div>
+                <div class = "video">
+                    <iframe id ="vid" width="500" height="315" src="https://www.youtube.com/embed/wDO4pRXpRmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="instruct">
                     <h3>Instructions:</h3>
-                    <ol>
-                        <li><big>text</big></li>
-                        <dd>Extra notes if you want, probably add images for each step</dd>
-                        <br>
-                        <li>text</li>
-                        <li>text</li>
-                    </ol>
-                    </div>
-                </main>
-            </div>
+                        <ol>
+                            <li><big>Heat an air fryer to 400 degrees F (200 degrees C) following manufacturer's instructions.</big></li>
+                            <dd>Extra notes if you want</dd>
+                            <<li><big>Heat an air fryer to 400 degrees F (200 degrees C) following manufacturer's instructions.</big></li>
+                            <dd>Extra notes if you want</dd>
+                            <li><big>Heat an air fryer to 400 degrees F (200 degrees C) following manufacturer's instructions.</big></li>
+                            <dd>Extra notes if you want</dd>
+                            <li><big>Heat an air fryer to 400 degrees F (200 degrees C) following manufacturer's instructions.</big></li>
+                            <dd>Extra notes if you want</dd>
+                            <li><big>Heat an air fryer to 400 degrees F (200 degrees C) following manufacturer's instructions.</big></li>
+                            <dd>Extra notes if you want</dd>
+                            <li><big>Heat an air fryer to 400 degrees F (200 degrees C) following manufacturer's instructions.</big></li>
+                            <dd>Extra notes if you want</dd>
+                            <li><big>Heat an air fryer to 400 degrees F (200 degrees C) following manufacturer's instructions.</big></li>
+                            <dd>Extra notes if you want</dd>
+                        </ol>
+                </div>
+                <!-- Adjust these breaks depending on how much space the instructions takes -->
+                <br>
+                <br>
+                <br>
+                <br>
+            </main>
+
+            <footer>
+                <a class="btn btn-primary" href="#" role="button">Top</a>
+                <a class="btn btn-primary" href="#" role="button">Choose a different recipe!</a>
+                <a class="btn btn-primary" href="#" role="button">Home</a>
+            </footer>
         </div>
+
     </body>
 
 
