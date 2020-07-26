@@ -37,7 +37,7 @@ function gotolink(form){
 				//lunch
 				  ["recipes/tteokbokki.html"],
 				//dinner
-				  ["recipes/kimchi.html"],
+				  ["recipes/kimchi-stew.html"],
 				//dessert
 				  ["ice cream.html", "cake.html", "pie.html"]
 				];
