@@ -1,2 +1,5 @@
-# regional-recipes
-This is a hack created for the HobbyHacks hackathon hosted by TechTogether. It aims to inspire people to cook and experience the variety of cuisine from around the world!
+# Regional Recipes https://cguo9.github.io/regional-recipes/
+Welcome to Regional Recipes! This is a hack created for the HobbyHacks hackathon hosted by TechTogether. It aims to inspire people to cook by helping them experience the variety of cuisine from around the world! With this website, users will be motivated to cook with new recipes that they might have never even seen or heard of before! The user can click the above link to access the first page of our web application.
+
+# Features
+Users can explore our home page and read the instructions for how to navigate our website or they can simple move to "Recipe Match Form" where they can fill out a form about which Continent and Country's cuisine they prefer and whether they prefer to see a recipe for breakfast, lunch, dinner or dessert. The "Recipes by Country" will take them to another page where they can directly select a recipe from a country using our handy dropdown feature. This website is a prototype built in around 24 hours and the features are limited as of now. There are only a few recipies from a few countries and continents available at the moment.
