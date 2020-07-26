@@ -13,7 +13,7 @@ Welcome to Regional Recipes! This is a hack created for the HobbyHacks July 2020
 # Features To Look Forward To
 * Widen our selection of recipes 
 * Comment and rating section for each recipe
-* A way for Users to submit their own recipes
+* A way for users to submit their own recipes
 * More filters for the Recipe Match Form feature
 * Enable the user to search for similar recipes
 
@@ -25,4 +25,4 @@ Hello! We are the Spicy Rice Cakes! Our team consists of Mariam Khan, Juana Ng, 
 <br/>
 
 # Disclaimer
-This hack was built in 24 hours so it is simply a functionaly prototype that consists of recipes for only three countries: Austrailia, Korea and Spain. Also, to access the Recipe Match Form properly, please run the website on your local machine by cloning the github repository as github pages is enforcing HTTPS due to security issues.
+This hack was built in 24 hours so it is simply a functional prototype that consists of recipes for only three countries: Austrailia, Korea and Spain. Also, to access the Recipe Match Form properly, please run the website on your local machine by cloning the github repository as github pages is enforcing HTTPS due to security issues.
