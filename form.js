@@ -39,7 +39,7 @@ function gotolink(form){
 				//dinner
 				  ["recipes/kimchi-stew.html"],
 				//dessert
-				  ["ice cream.html", "cake.html", "pie.html"]
+				  ["recipes/bingsu.html"]
 				];
 
 	// random food for korea bk, lun, din and des index
@@ -50,11 +50,11 @@ function gotolink(form){
 
 	var australia = [
 			//breakfast
-			  ["one.html", "two.html", "three.html"],
+			  ["recipes/FairyBread.html"],
 			//lunch
-			  ["four.html", "five.html", "six.html"],
+			  ["recipes/fish-and-chips.html"],
 			//dinner
-			  ["seven.html", "eight.html", "nine.html"],
+			  ["recipes/meat-pie.html"],
 			//dessert
 			  ["recipes/pavlova.html"]
 			];
@@ -68,11 +68,11 @@ function gotolink(form){
 		//breakfast
 		  ["recipes/pan-con-tomate.html"],
 		//lunch
-		  ["d.html", "e.html", "f.html"],
+		  ["recipes/paella.html"],
 		//dinner
-		  ["g.html", "h.html", "i.html"],
+		  ["recipes/patatas.html"],
 		//dessert
-		  ["j.html", "k.html", "l.html"]
+		  ["recipes/flan.html"]
 		];
 
 	var randspabk = Math.floor(Math.random() * spain[0].length);
