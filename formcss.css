@@ -1,0 +1,20 @@
+#forms{
+	max-width: 60em;
+  	margin: auto;
+  	padding-top: 20px;
+}
+
+.center{
+	display: block;
+    text-align: center;
+}
+
+.right{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.countries{
+	display: block;
+}
+

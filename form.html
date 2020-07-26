@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cooking - Pick</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="formcss.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		var testcont = false;
+		var testcount = false;
+
+		$(document).ready(function(){
+
+			// checks all the check boxes for continent
+			$("#checkallcont").click(function() {
+				
+		        if (this.checked) {
+		        	
+		            $("input[name='continent']").each(function() {		            	
+		                this.checked=true;
+		            });
+		        // if check all in unchecked
+		        } else if(this.checked == false){		     
+		            $("input[name='continent']").each(function() {
+		                this.checked=false;
+		            });
+		            // unchecks all countries
+		            $("input[name='country']").each(function() {
+		                this.checked=false;
+		            });
+		            // unchecks all foodtype
+		            $("input[name='foodtype']").each(function() {
+		                this.checked=false;
+		            });
+		        }
+		    }); // close checkallcont 
+
+
+		    // checks all the check boxes for country
+			$("#checkallcount").click(function() {
+				
+		        if (this.checked) {
+		        	
+		            $("input[name='country']").each(function() {		            	
+		                this.checked=true;
+		            });
+		        } else if(this.checked == false){		     
+		            $("input[name='country']").each(function() {
+		                this.checked=false;
+		            });
+		        }
+		    }); // close checkallcount 
+
+
+		    // checks all the check boxes for food type
+			$("#checkallfood").click(function() {
+				
+		        if (this.checked) {
+		        	
+		            $("input[name='foodtype']").each(function() {		            	
+		                this.checked=true;
+		            });
+		        } else if(this.checked == false){		     
+		            $("input[name='foodtype']").each(function() {
+		                this.checked=false;
+		            });
+		        }
+		    }); // close checkallcount 
+
+
+			//shows or hides depending which checkbox is checked
+			$('input[type="checkbox"]').click(function(){
+				$("#pcountry").css({"display": ""});
+				// if north america was chosen
+	            // if($("#na").prop("checked") == true){	                
+	            //     $("#us").css({"display": ""});
+	            //     $("#can").css({"display": ""});
+	            //     $("#mex").css({"display": ""});
+	            // }
+	            // else if($("#na").prop("checked") == false){	          
+	            //     $("#us").css({"display": "none"});
+	            //     $("#can").css({"display": "none"});
+	            //     $("#mex").css({"display": "none"});	                
+	            // }
+	            // if asia was chosen
+	            if($("#as").prop("checked") == true){	               
+	                $("#kor").css({"display": ""});                
+	            }
+	            else if($("#as").prop("checked") == false){	                
+	                $("#kor").css({"display": "none"});             
+	            }
+	            // if europe was chosen
+	            if($("#eur").prop("checked") == true){	               
+	                $("#spa").css({"display": ""});                
+	            }
+	            else if($("#eur").prop("checked") == false){	                
+	                $("#spa").css({"display": "none"});             
+	            }
+	            // if australia was chosen
+	            if($("#aus").prop("checked") == true){	               
+	                $("#ausc").css({"display": ""});                
+	            }
+	            else if($("#aus").prop("checked") == false){	                
+	                $("#ausc").css({"display": "none"});             
+	            }
+
+        	}); // close checkbox click
+
+			
+        	
+			$('input[type="checkbox"]').click(function() {
+				// checks if each continent check box is checked
+				testcont = false;
+	        	$("input[name='continent']").each(function() {
+	        		//console.log($(this).prop("checked"));		            	
+			        if($(this).prop("checked") == true){
+			        	testcont = true;
+			    	}			    	
+			    });
+			    //console.log("testing" + test);
+			    // if not checked dont display "pick country" + "check all"
+	        	if(testcont == false){
+			        $(".dcountry").css({"display": "none"});			        
+
+			    }
+			    else{
+			    	$(".dcountry").css({"display": ""});
+			    	
+			    }
+
+			    // display type of food when country is chosen
+			    $("input[name='country']").each(function() {
+	        		//console.log($(this).prop("checked"));		            	
+			        if($(this).prop("checked") == true){
+			        	testcount = true;
+			    	}			    	
+			    });
+
+			    // if no continents are checked
+			    if ($("#checkallcont").prop("checked") == false && testcont == false) {
+			    	// $("#checkboxes").prop("checked", false);
+			    	testcount = false;
+
+			    }
+
+			    if((testcount == false)){
+				    $("#bk").css({"display": "none"});
+		            $("#lun").css({"display": "none"});
+		            $("#din").css({"display": "none"});
+		            $("#des").css({"display": "none"});	
+		            $(".dfood").css({"display": "none"});
+
+			    }
+			    else{
+				    $("#bk").css({"display": ""});
+		            $("#lun").css({"display": ""});
+		            $("#din").css({"display": ""});
+		            $("#des").css({"display": ""});
+		            $(".dfood").css({"display": ""});		
+			    	testcount = false;
+			    }
+
+    		});
+
+		}); //close doc ready
+
+	</script>
+
+	<script type="text/javascript" src="form.js" /> </script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="HomePage.html">Regional Recipes</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="HomePage.html">Home</a>
+	      </li>
+	       <li class="nav-item active">
+	        <a class="nav-link" href="form.html">Recipe Match Form <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="PickCountry.html">Recipes By Country</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<div id="forms">
+	<form name="foodinfo" method="post">
+		
+		<!-- Continents -->
+		<p class="center">
+		Pick a Continent/Continents: 
+		</p>
+		<p>
+		
+		<div class="center">
+			<label class="right">
+			<input type="checkbox" name="continent" value="North America" id="na"> North America
+			</label>
+			<label class="right">
+			<input type="checkbox" name="continent" value="South America"> South America
+			</label>
+			<label class="right">
+			<input type="checkbox" name="continent" value="Asia" id="as"> Asia
+			</label>
+			<label class="right">
+			<input type="checkbox" name="continent" value="Europe" id="eur"> Europe
+			</label>
+			<label class="right">
+			<input type="checkbox" name="continent" value="Africa"> Africa
+			</label>
+			<label class="right">
+			<input type="checkbox" name="continent" value="Australia" id="aus"> Australia
+			</label>
+		</div>
+		<br>
+		<!-- Check all Continents -->
+		<p>	
+		<label class="center">
+		<input type="checkbox" name="allcontinent" value="allcontinent" id="checkallcont"> Check All
+		</label>	
+		<hr>
+		<!-- Countries -->
+		<p class="dcountry center" style="display: none"> 
+		Pick a Country/Countries: 
+		</p>
+		<p>
+		<!-- North America -->
+		<!-- <label id="us" class="nacountries" style="display: none">
+		<input type="checkbox" name="country" value="United States"> United States
+		</label>
+
+		<label id="can" class="nacountries" style="display: none">
+		<input type="checkbox" name="country" value="Canada"> Canada
+		</label>
+
+		<label id="mex" class="nacountries" style="display: none">
+		<input type="checkbox" name="country" value="Mexico"> Mexico <br>
+		</label> -->
+		
+		<div class="center">
+			<!-- Asia -->
+			<label id="kor" class="countries right" style="display: none">
+			<input type="checkbox" name="country" value="Korea"> Korea 
+			</label>
+			<!-- <p> -->
+			<!-- Europe -->
+			<label id="spa" class="countries right" style="display: none">
+			<input type="checkbox" name="country" value="Spain"> Spain 
+			</label>
+			<!-- <p> -->
+			<!-- Australia -->
+			<label id="ausc" class="countries right" style="display: none">
+			<input type="checkbox" name="country" value="Australia"> Australia 
+			</label>
+
+		</div>
+		
+		<!-- Check all Countries -->
+		<p>
+		<label class="dcountry center" style="display: none">
+		<input type="checkbox" name="allcountry" value="allcountry" id="checkallcount"> Check All
+		</label>
+
+		<hr class="dcountry" style="display: none">
+
+		<!-- Type of Food -->
+		<p class="dfood center" style="display: none">
+		Pick a Meal Category/Categories: 	
+		</p>
+
+		<div class="center">
+			<label id="bk" class="right" style="display: none">
+			<input type="checkbox" name="foodtype" value="Breakfast"> Breakfast
+			</label>
+
+			<label id="lun" class="right" style="display: none">
+			<input type="checkbox" name="foodtype" value="Lunch"> Lunch
+			</label>
+
+			<label id="din" class="right" style="display: none">
+			<input type="checkbox" name="foodtype" value="Dinner"> Dinner
+			</label>
+
+			<label id="des" class="right" style="display: none">
+			<input type="checkbox" name="foodtype" value="Dessert"> Dessert
+			</label>
+			 <br>
+			<!-- Check all types of food -->
+			<p>
+			<label class="dfood" style="display: none">
+			<input type="checkbox" name="allfoodtype" value="allfood" id="checkallfood"> Check All
+			</label>
+		</div>
+		<hr class="dfood" style="display: none">
+
+
+		<div class="center">
+			<input type="submit" value="Submit" class="dfood" style="display: none" onclick="gotolink(this.form)">
+			<!-- <input type="reset" value="Reset"> -->
+		</div>
+	</form>
+	</div>
+</body>
+</html>
