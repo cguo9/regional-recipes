@@ -1,48 +1,45 @@
-body{
-  margin:0;
-  text-align: center;
-  background-color: pink;
-}
 
 h1{
   widows: 10%;
   color: coral;
   text-align: center;
   width:50%;
-  font-family: 'Bilbo', cursive;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 5.625rem;
-  margin:0 auto 0 auto;
+  margin:0 auto;
 }
 
-p1{color: green;
+p{color: #ff5f40;
   text-align: center;
-  font-family: 'Inconsolata', monospace;
-  margin:25px auto 25px auto;
+  width:300px;
+  font-size:1.5rem;
+  margin:25px auto;
   line-height: 2;
 }
 
 .middle-container{
 	padding-top: 20px;
+	padding-bottom:50px;
 	text-align: center;
-	background-color: #fce38a;
+	background-color: #ffe2e2;
 }
 
 .bottom-container{
 	padding-top: 20px;
 	padding-bottom: 10px;
   text-align: center;
-  background-color: #eaffd0;
+  background-color: #f6f6f6;
 }
 .buttons{
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 25%;
+  width: 33.33%;
   padding: 5px;
 }
 
