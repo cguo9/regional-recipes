@@ -1,15 +1,17 @@
+body {background-color: #e085c2;
+  height: 100%;}
+
 h1 {text-align: center;
   font-size: 100px;
   color: #e3d876;
 }
 
-body, html {
+html {
     height: 100%;
 }
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://di-uploads-pod13.dealerinspire.com/cactusjacksauto/uploads/2018/10/Depositphotos_62109715_m-2015.jpg");
 
   /* Set a specific height */

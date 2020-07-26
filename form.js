@@ -33,11 +33,11 @@ function gotolink(form){
 	// foods for korea
 	var korea = [
 				//breakfast
-				  ["pancakes.html", "cereal.html", "waffles.html"],
+				  ["recipes/veg-pancake.html"],
 				//lunch
-				  ["burger.html", "fries.html", "sandwich.html"],
+				  ["recipes/tteokbokki.html"],
 				//dinner
-				  ["steak.html", "lobster.html", "chicken.html"],
+				  ["recipes/kimchi-stew.html"],
 				//dessert
 				  ["ice cream.html", "cake.html", "pie.html"]
 				];
@@ -56,7 +56,7 @@ function gotolink(form){
 			//dinner
 			  ["seven.html", "eight.html", "nine.html"],
 			//dessert
-			  ["ten.html", "elev.html", "twel.html"]
+			  ["recipes/pavlova.html"]
 			];
 
 	var randausbk = Math.floor(Math.random() * australia[0].length);
@@ -66,7 +66,7 @@ function gotolink(form){
 
 	var spain = [
 		//breakfast
-		  ["a.html", "b.html", "c.html"],
+		  ["recipes/pan-con-tomate.html"],
 		//lunch
 		  ["d.html", "e.html", "f.html"],
 		//dinner
