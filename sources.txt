@@ -1,3 +1,5 @@
+List of Sources Used for Compiling Recipes:
+
 https://www.maangchi.com/recipe/tteokbokki
 https://www.maangchi.com/recipe/kimchi-jjigae
 https://www.maangchi.com/recipe/yachaejeon
@@ -7,3 +9,5 @@ https://cooking.nytimes.com/recipes/1014972-sam-siftons-pan-con-tomate?fbclid=Iw
 https://www.maangchi.com/recipe/patbingsu
 https://www.allrecipes.com/recipe/80934/fairy-bread/
 https://www.myrecipes.com/recipe/traditional-spanish-paella-0
+https://www.spainonafork.com/the-authentic-patatas-bravas-served-in-madrid-spain/
+https://www.recipetineats.com/meat-pie-recipe/
